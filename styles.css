@@ -1,0 +1,76 @@
+#body {
+    color: #1b1b32;
+    font-family: Helvetica;
+    background-image: url("Genshin Banner Sprites\bg-none.png");
+    font-size: 100%;
+    background-size: cover;
+    background-position: center top;   
+}
+
+
+#Genshinheader{
+    text-align: center;
+}
+
+#genshinbannerchar1 , #genshinbannerchar2 {
+  max-width: max(10rem, 18vw);
+  /*background-color: #74bee3;*/
+  padding: 0.5rem;
+  display: inline-grid;
+  object-fit: contain;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 5%;
+  width: 500px;
+  height: 700px;
+}
+
+#genshinbannerchar1 {
+    float: left;
+}
+
+#genshinbannerchar2 {
+  float: right;
+}
+
+#weapon1 , #weapon2 {
+  padding: 0.5px;
+  object-fit: contain;
+  width:  20%;
+  height: 20%;
+  background-color: #d89158;
+}
+
+#fourstar1 , #fourstar2 , #fourstar3{
+    display: inline-block;
+    width:  auto;
+    height: auto;
+    margin: auto;
+    background-color: #9372bd;
+    object-fit: contain;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.center {
+    align-items: baseline;
+  }
+
+#genshinNAcountdown{
+    color: #1b1b32;
+    font-family: Helvetica;
+    background-image: url("Genshin Banner Sprites\bg-none.png");
+    font-size: 75px;
+    object-fit: contain;
+    align-self: center;
+}

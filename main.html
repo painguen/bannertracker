@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A website to display the current banner for Mihoyo Gacha Games like Genshin Impact , Honkai Star rail (HSR) , and Zenless Zone Zero (ZZZ)" />
+    <title id="title" style="font-size:10vw">Banner Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+    <div id="GenshinBanners">
+    <header id="Genshinheader">Current genshin banner</header>
+    <img id="genshinbannerchar1" src="Genshin Banner Sprites\5stars\Furina_Card.png" alt="Furina From Genshin Impact">
+    <img id="genshinbannerchar2" src="Genshin Banner Sprites\5stars\Sigewinne_Card.png" alt="Sigewinne From Genshin Impact">
+    <img id="fourstar1" class="center" src="Genshin Banner Sprites\4stars\Mondstat Icons\Noelle_Icon.png" alt="Noelle From Genshin Impact!">
+    <img id="fourstar2" class="center" src="Genshin Banner Sprites\4stars\Liyue Icons\Gaming_Icon.png" alt="GaMING From Genshin Impact">
+    <img id="fourstar3" class="center" src="Genshin Banner Sprites\4stars\Mondstat Icons\Rosaria_Icon.png" alt="Rosaria From Genshin Impact">
+    <img id="weapon1" class="center" src="Genshin Banner Sprites\weapons\Weapon_Splendor_of_Tranquil_Waters.png" alt="Furina From Genshin Impact Five Star Weapon">
+    <img id="weapon2" class="center" src="Genshin Banner Sprites\weapons\Weapon_Silvershower_Heartstrings.png" alt="Sigewinne From Genshin Impact Five Star Weapon">
+    </div>
+  </div>
+  <div id="genshinNAcountdown">
+    <p id="timer"></p>
+    <script>
+        /*god bless w3schools for this because I was not about to go study js just yet*/
+        // Set the date we're counting down to
+        var countDownDate = new Date("July 16, 2024 15:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="timer"
+          document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "Banner Over, wait for change.";
+          }
+        }, 1000);
+        </script>
+  </div>
+
+  </body>
+</html>
