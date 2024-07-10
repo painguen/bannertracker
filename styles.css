@@ -1,15 +1,25 @@
-#body {
+body {
     color: #1b1b32;
     font-family: Helvetica;
-    background-image: url("Genshin Banner Sprites\bg-none.png");
-    font-size: 100%;
+    background-image: url(bg-none.png);
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;   
 }
-
 
 #Genshinheader{
     text-align: center;
+    background-color: #1b1b32;
+    font-size: 200%;
+    color:aliceblue;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-size: cover; 
 }
 
 #genshinbannerchar1 , #genshinbannerchar2 {
@@ -19,11 +29,13 @@
   display: inline-grid;
   object-fit: contain;
   margin-top: 0%;
-  margin-bottom: 5%;
-  margin-left: 2%;
-  margin-right: 5%;
-  width: 500px;
-  height: 700px;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 40%;
+  height: 40%;
+  max-width:400px;
+  max-height:600px;
 }
 
 #genshinbannerchar1 {
@@ -36,19 +48,31 @@
 
 #weapon1 , #weapon2 {
   padding: 0.5px;
+  display: inline-flex;
   object-fit: contain;
   width:  20%;
   height: 20%;
   background-color: #d89158;
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+  position: relative;
+  border: 0%;
 }
 
 #fourstar1 , #fourstar2 , #fourstar3{
-    display: inline-block;
-    width:  auto;
-    height: auto;
-    margin: auto;
+    display: inline-flex;
+    width:  20%;
+    height: 20%;
     background-color: #9372bd;
     object-fit: contain;
+    max-width: 256px;
+    max-height: 256px;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    border: 0%;
+    margin-top: 0.6%;
 }
 
 #wrapper {
@@ -67,10 +91,13 @@
   }
 
 #genshinNAcountdown{
-    color: #1b1b32;
-    font-family: Helvetica;
-    background-image: url("Genshin Banner Sprites\bg-none.png");
-    font-size: 25px;
     object-fit: contain;
     align-self: center;
+}
+
+#timer{
+  text-align: center;
+  color: white;
+  font-family: Helvetica;
+  font-size: 250%;
 }
