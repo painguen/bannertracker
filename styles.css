@@ -24,6 +24,8 @@ h1{
 h1 img{
   width: 5%;
   height: 5%;
+  max-width: 64px;
+  max-height: 64px;
 }
 
 #genshinbannerchar1 , #genshinbannerchar2 {
